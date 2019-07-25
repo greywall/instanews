@@ -1,4 +1,99 @@
-* {
-    color: red;
-    color: green;
+/* Typography */
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/OpenSans-Light.ttf") format("tff");
 }
+
+/* Sections */
+
+body {
+    background: black;
+  }
+
+.fullpage {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.article-content {
+    color: white;
+    font-size: 1rem;
+}
+
+.article-content article {
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
+
+.fullpage p {
+    font-family: "Opens Sans", Arial, Helvetica, sans-serif;
+}
+
+.select-option {
+    color: white;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.footer-text {
+    color: grey;
+    text-align: center;
+}
+
+.all-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+.input {
+    font-size: 99rem;
+}
+
+
+
+/* Controls Elements with width greater than 600px */
+@media only screen and (min-width: 600px) {
+    body {
+      background: black;
+    }
+    .all-content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    
+    .form-section  {
+        display: inline;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        
+    }
+  }
+
+
+
+/* Controls Elements with width greater than 1000px */
+@media only screen and (min-width: 1000px) {
+    body {
+      background: black;
+    }
+    .all-content {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .footer-text {
+        text-align: left;
+    }
+  }
