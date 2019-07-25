@@ -19,15 +19,13 @@ body {
     height: 100vh;
 }
 
+
 .article-content {
     color: white;
-    font-size: 1rem;
-}
-
-.article-content article {
-    height: 200px;
-    width: 200px;
     display: flex;
+    font-size: 1rem;
+    text-align: flex;
+    flex-direction: column;
 }
 
 .fullpage p {
@@ -39,8 +37,21 @@ body {
 
 }
 
-img {
-    max-width: 100%;
+
+
+
+li {
+    list-style-type: none;
+}
+
+.grid-cell {
+    width: 100%;
+    height: 300px;
+}
+
+.grid-cell a {
+    text-decoration: none;
+    Color: white;
 }
 
 .footer-text {
