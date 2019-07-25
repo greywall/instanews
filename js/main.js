@@ -40,17 +40,23 @@ $(function() {
         const abstract = value.abstract;
         const imgUrl = value.multimedia[4];
         console.log(value.multimedia[4]);
-        $("#article-content").append(`<li>
+        $("#article-content").append(`<li class="article-li">
                         <a href="#">
-                            <div class="grid-cell" id="grid-cell-${index}" style="background-image: url(${value.multimedia[4].url})">
+                            <div class="grid-cell" id="grid-cell-${index}" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${value.multimedia[4].url}) center/cover">
                                 <div>  
                                 <article> 
-                                    <p>${abstract}</p>
+                                    <p class="article-abstract">${abstract}</p>
                                         </article>  
                                         </div>
                                         </div>
                                         </a>
                                         </li>`);
+          
+                                      //   $('#article-content').css({
+                                      //     "background-size":"cover";
+                                      //     "display":"flex";
+                                      //     "justify-content": "flex-end" 
+                                      // });
       });
       // .fail(function () {
 

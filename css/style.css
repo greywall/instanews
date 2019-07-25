@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 /* Typography */
 
 @font-face {
@@ -23,14 +26,24 @@ body {
 .article-content {
     color: white;
     display: flex;
+    flex-wrap: wrap;
     font-size: 1rem;
-    text-align: flex;
-    flex-direction: column;
+    /* text-align: flex; */
+    /* flex-direction: column; */
+}
+
+.article-li {
+    width: 50%;
 }
 
 .fullpage p {
     font-family: "Opens Sans", Arial, Helvetica, sans-serif;
 }
+
+.article-abstract {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .90) 100%),
+}
+
 
 .select-option {
     color: white;
@@ -42,6 +55,12 @@ body {
 
 li {
     list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    
 }
 
 .grid-cell {
