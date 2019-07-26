@@ -9,7 +9,7 @@ const gulp = require("gulp"),
 
 gulp.task("watch", function() {
   gulp.watch("js/*.js", gulp.series("scripts"));
-  gulp.watch('sass/*.scss', gulp.series('sass'));
+  gulp.watch('assets/sass/**/*.scss', gulp.series('sass'));
   gulp.watch("*.html").on("change", browserSync.reload);
 });
 
