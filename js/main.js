@@ -30,17 +30,32 @@ $(function() {
       url: `https://api.nytimes.com/svc/topstories/v2/${selected}.json?api-key=SuyqPBLEaZeA2ccThYAa6TIJ5jA35kOj`
     }).done(function(data) {
       console.log(data);
-      if (data.results.multimedia[4] != "") {
-        const results = data.results.slice(0, 12);
-      }
+
+      const results = data.results;
+
+      const filteredArray = results.filter(function(article){
+        return article.multimedia[4] !== undefined;
+      }).slice(0, 12);
+
+      console.log(filteredArray);
+
+      // const imageArticle = .each(data.results.multimedia[4]).filter(=== "");
+      // const results = data.results.slice(0, 12)};
+     
+      // const results =  filter(data.results.multimedia[4] = ).data.results.slice(0, 12)};
+      
+      
+      // if (data.results.multimedia[4] != "") {
+      //   const results = data.results.slice(0, 12);
+      // }
 
       $("#article-content").html("");
 
-      $.each(results, function(index, value) {
+      $.each(filteredArray, function(index, value) {
         // console.log(value.name);
 
         const abstract = value.abstract;
-        const imgUrl = value.multimedia[4];
+        
         console.log(value.multimedia[4]);
         $("#article-content").append(`<li class="article-li">
                         <a href="#">
