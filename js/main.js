@@ -30,7 +30,9 @@ $(function() {
       url: `https://api.nytimes.com/svc/topstories/v2/${selected}.json?api-key=SuyqPBLEaZeA2ccThYAa6TIJ5jA35kOj`
     }).done(function(data) {
       console.log(data);
-      const results = data.results.slice(0, 12);
+      if (data.results.multimedia[4] != "") {
+        const results = data.results.slice(0, 12);
+      }
 
       $("#article-content").html("");
 
@@ -42,21 +44,15 @@ $(function() {
         console.log(value.multimedia[4]);
         $("#article-content").append(`<li class="article-li">
                         <a href="#">
-                            <div class="grid-cell" id="grid-cell-${index}" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${value.multimedia[4].url}) center/cover">
-                                <div>  
-                                <article> 
+                            <div class="grid-cell" id="grid-cell-${index}" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(${value.multimedia[4].url}) center/cover">
+                                <div class="article-div">  
+                                <article class="article-child"> 
                                     <p class="article-abstract">${abstract}</p>
                                         </article>  
                                         </div>
                                         </div>
                                         </a>
-                                        </li>`);
-          
-                                      //   $('#article-content').css({
-                                      //     "background-size":"cover";
-                                      //     "display":"flex";
-                                      //     "justify-content": "flex-end" 
-                                      // });
+                                        </li>`);  
       });
       // .fail(function () {
 

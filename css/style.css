@@ -32,8 +32,25 @@ body {
     /* flex-direction: column; */
 }
 
+.article-div {
+    display: flex;
+    justify-content: flex-end;
+    height: 40%;
+}
+
+.article-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    text-decoration: none;
+
+}
+
 .article-li {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .fullpage p {
@@ -41,7 +58,9 @@ body {
 }
 
 .article-abstract {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .90) 100%),
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .20) 0%, rgba(0, 0, 0, .20) 100%);
+    text-decoration: none;
+    height: 30%;
 }
 
 
@@ -53,10 +72,6 @@ body {
 
 
 
-li {
-    list-style-type: none;
-}
-
 ul {
     padding: 0;
     list-style-type: none;
@@ -64,8 +79,12 @@ ul {
 }
 
 .grid-cell {
-    width: 100%;
+    /* width: 100%; */
     height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 
 .grid-cell a {
@@ -90,6 +109,13 @@ ul {
     font-size: 99rem;
 }
 
+
+/* Controls Elements with width greater than 600px */
+@media only screen and (min-width: 480px) {
+    .article-li {
+        width: 50%;
+    }
+  }
 
 
 /* Controls Elements with width greater than 600px */
@@ -125,5 +151,8 @@ ul {
     }
     .footer-text {
         text-align: left;
+    }
+    .article-li {
+        width: 25%;
     }
   }
