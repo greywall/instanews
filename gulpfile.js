@@ -9,7 +9,7 @@ const gulp = require("gulp"),
 
 gulp.task("watch", function() {
   gulp.watch("js/*.js", gulp.series("scripts"));
-  // gulp.watch("css/*.css", gulp.series("styles"));
+  gulp.watch('sass/*.scss', gulp.series('sass'));
   gulp.watch("*.html").on("change", browserSync.reload);
 });
 
@@ -49,7 +49,7 @@ gulp.task("scripts",
 
 gulp.task('sass', function() {
   return gulp
-    .src('./sass/style.scss')
+    .src('./assets/sass/style.scss')
     .pipe(sass())
     .pipe(
       autoprefixer({
