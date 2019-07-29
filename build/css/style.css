@@ -6,12 +6,22 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+/* Media Queries */
+/* Loading Gif */
+.loader-container-appear {
+  display: none;
+  width: 3rem;
+  margin: 0 auto; }
+
+.loader-container-disappear {
+  display: none; }
+
 /* Sections */
 body {
-  background: black; }
+  background: lightpink; }
 
 .fullpage {
-  background: black;
+  background: lightcoral;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +43,14 @@ body {
       flex-wrap: wrap;
   font-size: 1rem;
   /* text-align: flex; */
-  /* flex-direction: column; */ }
+  /* flex-direction: column; */
+  width: 100%; }
+  .article-content a:hover,
+  .article-content a:visited,
+  .article-content a:link,
+  .article-content a:active {
+    text-decoration: none;
+    color: white; }
 
 .article-div {
   display: -webkit-box;
@@ -42,7 +59,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 40%; }
+  width: 100%; }
 
 .article-child {
   display: -webkit-box;
@@ -71,9 +88,7 @@ body {
 
 .article-abstract {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-  text-decoration: none;
-  height: 30%; }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%); }
 
 .select-option {
   color: white; }
@@ -83,8 +98,8 @@ ul {
   list-style-type: none; }
 
 .grid-cell {
-  /* width: 100%; */
   height: 300px;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,11 +110,8 @@ ul {
       align-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
-
-.grid-cell a {
-  text-decoration: none;
-  Color: white; }
+          align-items: flex-end;
+  background-size: 100%; }
 
 .footer-text {
   color: grey;
@@ -118,9 +130,6 @@ ul {
   text-align: center;
   padding-top: 25vh; }
 
-.input {
-  font-size: 99rem; }
-
 /* Controls Elements with width greater than 600px */
 @media only screen and (min-width: 480px) {
   .article-li {
@@ -129,7 +138,7 @@ ul {
 /* Controls Elements with width greater than 600px */
 @media only screen and (min-width: 600px) {
   body {
-    background: black; }
+    background: skyblue; }
   .all-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -154,7 +163,7 @@ ul {
 /* Controls Elements with width greater than 1000px */
 @media only screen and (min-width: 1000px) {
   body {
-    background: black; }
+    background: lightcoral; }
   .all-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
