@@ -49,22 +49,22 @@ body {
 
 .article-div {
   display: flex;
-  justify-content: flex-end;
+  //   justify-content: flex-end;
   width: 100%;
 }
 
 .article-child {
   display: flex;
-  justify-content: flex-end;
+  //   justify-content: flex-end;
   align-items: flex-end;
   color: white;
   text-decoration: none;
 }
 
 .article-li {
-  width: 100%;
+  //   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  //   justify-content: flex-end;
 }
 
 .fullpage p {
@@ -96,7 +96,7 @@ ul {
   justify-content: flex-end;
   align-content: flex-end;
   align-items: flex-end;
-  background-size: 100%;
+  //   background-size: 100%;
 }
 
 .footer-text {
