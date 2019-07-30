@@ -78,7 +78,11 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
   width: 100%;
   text-align: left;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  padding: 0rem 0.25rem; }
+
+.article-link {
+  width: 100%; }
 
 .select-option {
   color: white; }
@@ -89,7 +93,9 @@ ul {
 
 .grid-cell {
   height: 300px;
-  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +127,7 @@ ul {
 
 /* Controls Elements with width greater than 600px */
 @media only screen and (min-width: 480px) {
-  .article-li {
+  .article-link {
     width: 50%; } }
 
 /* Controls Elements with width greater than 600px */
@@ -163,5 +169,5 @@ ul {
             justify-content: flex-start; }
   .footer-text {
     text-align: left; }
-  .article-li {
+  .article-link {
     width: 25%; } }

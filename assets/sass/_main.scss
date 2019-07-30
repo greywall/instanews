@@ -76,6 +76,11 @@ body {
   width: 100%;
   text-align: left;
   line-height: 1.5rem;
+  padding: 0rem 0.25rem;
+}
+
+.article-link {
+  width: 100%;
 }
 
 .select-option {
@@ -89,12 +94,14 @@ ul {
 
 .grid-cell {
   height: 300px;
-  width: auto;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
   align-items: flex-end;
-  //   background-size: 100%;
 }
 
 .footer-text {
@@ -112,7 +119,7 @@ ul {
 
 /* Controls Elements with width greater than 600px */
 @media only screen and (min-width: 480px) {
-  .article-li {
+  .article-link {
     width: 50%;
   }
 }
@@ -147,7 +154,7 @@ ul {
   .footer-text {
     text-align: left;
   }
-  .article-li {
+  .article-link {
     width: 25%;
   }
 }
