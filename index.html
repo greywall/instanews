@@ -5,65 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="icon" href="./assets/images/nyticon.ico">
+    <link rel="icon" href="./assets/images/nyticon.ico" />
     <!-- <link rel="stylesheet" href="./build/css/reset.min.css"> -->
     <!--Reset CSS Style sheet-->
     <link rel="stylesheet" href="./build/css/style.min.css"
-    
   </head>
   <body>
-
     <div class="fullpage">
-
-    <div class="all-content">
-      
+      <div class="all-content">
         <section>
-       
+          <img
+            class="logo"
+            src="assets/images/nyt-logo.svg"
+            alt="NY Times Logo"
+          />
+        </section>
+
+        <section class="form-section">
+          <p class="select-option">Choose a section</p>
+
+          <form action="#" class="form-selection">
+            <select id="article-select">
+              <option class="form-text" value="">Section...</option>
+              <option class="form-text" value="home">Home</option>
+              <option class="form-text" value="arts">Arts</option>
+              <option class="form-text" value="business">Business</option>
+              <option class="form-text" value="sports">Sports</option>
+              <option class="form-text" value="technology">Technology</option>
+              <option class="form-text" value="fashion">Fashion</option>
+            </select>
+          </form>
+        </section>
+      </div>
+
+      <div class="article-grid">
         <img
-          class="logo"
-          src="assets/images/nyt-logo.svg"
-          alt="NY Times Logo"
+          src="./assets/images/ajax-loader.gif"
+          alt="Your content is being loaded"
+          class="loader-container-appear"
         />
-      </section>
+        <ul class="article-content" id="article-content"></ul>
+      </div>
 
-      <section class="form-section">
-        
-        <p class="select-option">Choose a section</p>
-        
-        <form action="#" class="form-selection">
-          <select id="article-select">
-            <option class="form-text" value="">Section...</option>
-            <option class="form-text" value="home">Home</option>
-            <option class="form-text" value="arts">Arts</option>
-            <option class="form-text" value="business">DA Bomb Business</option>
-            <option class="form-text" value="sports">Sports</option>
-            <option class="form-text" value="technology">Technology</option>
-            <option class="form-text" value="fashion">Fashion</option>
-          </select>
-        </form>
-
-        
-
-      </section>
-      
-      
-    
-    </div>
-
-    <div class="article-grid">
-        <img src="./assets/images/ajax-loader.gif" alt="Your content is being loaded" class="loader-container-appear">
-        <ul class="article-content" id="article-content">
-
-        </ul>
-        </div>
-
-    <footer class="footer-text">
-      <p>&#9400; Copyright 2019 Instanews</p>
-    </footer>
-
+      <footer class="footer-text">
+        <p>&#9400; Copyright 2019 Instanews</p>
+      </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./build/js/main.min.js"></script>
   </body>
 </html>
+<div></div>

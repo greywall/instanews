@@ -84,6 +84,10 @@ $(function() {
       })
       .fail(function() {
         console.log("something is really messed up");
+        $("#article-content").html("");
+        $("#article-content").append(
+          `<p>We were unable to get information at this time. Please check back later.</p>`
+        );
       })
       .always(function() {
         $(".loader-container-appear").hide();
