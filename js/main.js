@@ -66,19 +66,17 @@ $(function() {
 
           console.log(value.multimedia[4]);
           $("#article-content").append(
-            `<li class="article-li">
-                <a href="${value.short_url}">
-                <div class="grid-cell" id="grid-cell-${index}" style="background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(${
+            `<article class="article-li grid-cell" id="grid-cell-${index}" style="background: url(${
               value.multimedia[4].url
             }) center/cover">
-                   <div class="article-div">  
-                    <article class="article"> 
+            <a href="${value.short_url}">
+                    <article class="article article-div"> 
                        <p class="article-abstract">${abstract}</p>
                     </article>  
-                    </div>
-                   </div>
-                   </a>
-              </li>`
+                     </a>
+                   </article>
+                   
+              
           );
         });
       })
