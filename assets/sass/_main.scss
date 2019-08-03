@@ -14,11 +14,10 @@
 /* Sections */
 
 body {
-  background: lightpink;
+  background: black;
 }
 
 .fullpage {
-  background: lightcoral;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,6 +28,7 @@ body {
   color: white;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   font-size: 1rem;
   /* text-align: flex; */
   /* flex-direction: column; */
@@ -43,35 +43,46 @@ body {
   width: 100%;
 }
 
+.article-title-container {
+  align-self: flex-start;
+  width: 100%;
+}
+
 .article-div {
   display: flex;
-  //   justify-content: flex-end;
   width: 100%;
 }
 
 .article-child {
   display: flex;
-  //   justify-content: flex-end;
+
   align-items: flex-end;
   color: white;
   text-decoration: none;
 }
 
-.article-li {
-  //   width: 100%;
-  display: flex;
-  //   justify-content: flex-end;
+.fullpage p {
+  font-family: "Open Sans", wingdings;
 }
 
-.fullpage p {
-  font-family: "Opens Sans", Arial, Helvetica, sans-serif;
+.article-title-text {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+  width: 100%;
+  text-align: left;
+  line-height: 1.6rem;
+  padding: 0rem 0.25rem;
+  font-size: 1.5rem;
 }
 
 .article-abstract {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.35) 0%,
-    rgba(0, 0, 0, 0.35) 100%
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.45) 100%
   );
   width: 100%;
   text-align: left;
@@ -83,15 +94,6 @@ body {
   width: 100%;
 }
 
-.select-option {
-  color: white;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
 .grid-cell {
   height: 300px;
 
@@ -99,9 +101,34 @@ ul {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   align-content: flex-end;
   align-items: flex-end;
+}
+
+.select-option {
+  color: white;
+  font-size: 1rem;
+}
+
+.form-section {
+  padding-bottom: 2rem;
+}
+
+.article-grid {
+  margin: 0 auto;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#article-select {
+  font-size: 1.2rem;
+  height: 1.7rem;
 }
 
 .footer-text {
@@ -127,7 +154,7 @@ ul {
 /* Controls Elements with width greater than 600px */
 @media only screen and (min-width: 600px) {
   body {
-    background: skyblue;
+    background: black;
   }
   .all-content {
     flex-direction: row;
@@ -145,7 +172,7 @@ ul {
 /* Controls Elements with width greater than 1000px */
 @media only screen and (min-width: 1000px) {
   body {
-    background: lightcoral;
+    background: black;
   }
   .all-content {
     flex-direction: row;

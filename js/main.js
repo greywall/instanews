@@ -23,13 +23,6 @@ $(function() {
   //     // try template springs <article> <p>${abstract}</p></article>
   //     // })
 
-  // }).fail(function(err){
-  //     console.log(err)
-  // }).always(function(){
-  //     console.log('always runs');
-
-  // });
-
   function loadArticles(selected) {
     $.ajax({
       method: "get",
@@ -67,10 +60,12 @@ $(function() {
           console.log(value.multimedia[4]);
           $("#article-content").append(
             `<a class="article-link" href="${value.short_url}">
-            <article class="article-li grid-cell" id="grid-cell-${index}" style="background: url(${
+            <article class="grid-cell" id="grid-cell-${index}" style="background: url(${
               value.multimedia[4].url
             }) center/cover">
-            
+                      <div class="article-title-container"> 
+                      <p class="article-title-text">${value.title}</p>
+                  </div> 
                     <div class="article article-div"> 
                        <p class="article-abstract">${abstract}</p>
                     </div> 
