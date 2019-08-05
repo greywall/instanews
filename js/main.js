@@ -13,7 +13,7 @@ $(function() {
     loadArticles(selected);
   });
 
-  // }).done(function(data){
+  // }).done(function(data){`
   // console.log(data.results);
 
   //     const results = data.results;
