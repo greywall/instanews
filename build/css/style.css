@@ -1,9 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: ‘Open Sans’;
-  src: url(‘../../assets/fonts/OpenSans-Light.eot’);
-  src: url(‘../../assets/fonts/OpenSans-Light.eot?#iefix’) format(‘embedded-opentype’), url(‘../../assets/fonts/OpenSans-Light.woff2’) format(‘woff2’), url(‘../../assets/fonts/OpenSans-Light.woff’) format(‘woff’), url(‘../../assets/fonts/OpenSans-Light.ttf’) format(‘truetype’), url(‘../../assets/fonts/OpenSans-Light.svg#OpenSans-Light’) format(‘svg’);
-  font-weight: 300;
+  font-family: 'Open Sans';
+  src: url("../../assets/fonts/OpenSans-Light.eot") format("embedded-opentype"), url("../../assets/fonts/OpenSans-Light.woff2") format("woff2"), url("../../assets/fonts/OpenSans-Light.woff") format("woff"), url("../../assets/fonts/OpenSans-Light.ttf") format("truetype"), url("../../assets/fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
   font-style: normal; }
 
 * {
@@ -77,11 +75,19 @@ body {
   text-decoration: none; }
 
 .fullpage p {
-  font-family: "Open Sans", wingdings; }
+  font-family: 'Open Sans', sans-serif; }
 
 .article-title-text {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%);
+  width: 100%;
+  text-align: left;
+  line-height: 1.6rem;
+  padding: 0rem 0.25rem;
+  font-size: 1.5rem; }
+
+.article-title-text-nobg {
+  background: none;
   width: 100%;
   text-align: left;
   line-height: 1.6rem;
@@ -129,7 +135,7 @@ body {
 
 .article-grid {
   margin: 0 auto;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+  font-family: ‘Open Sans’, Arial, Helvetica, sans-serif; }
 
 ul {
   padding: 0;
@@ -156,10 +162,18 @@ ul {
   text-align: center;
   padding-top: 25vh; }
 
-/* Controls Elements with width greater than 600px */
+.article-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+/* Controls Elements with width greater than 480px */
 @media only screen and (min-width: 480px) {
   .article-link {
-    width: 50%; } }
+    width: 50%; }
+  .loader-container-appear {
+    display: none;
+    width: 3rem;
+    margin: 0 auto; } }
 
 /* Controls Elements with width greater than 600px */
 @media only screen and (min-width: 600px) {
@@ -184,7 +198,11 @@ ul {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+  .loader-container-appear {
+    display: none;
+    width: 3rem;
+    margin: 0 auto; } }
 
 /* Controls Elements with width greater than 1000px */
 @media only screen and (min-width: 1000px) {
@@ -201,4 +219,8 @@ ul {
   .footer-text {
     text-align: left; }
   .article-link {
-    width: 25%; } }
+    width: 25%; }
+  .loader-container-appear {
+    display: none;
+    width: 3rem;
+    margin: 0 auto; } }

@@ -62,8 +62,9 @@ body {
 }
 
 .fullpage p {
-  font-family: "Open Sans", wingdings;
+  font-family: 'Open Sans', sans-serif;
 }
+
 
 .article-title-text {
   background: linear-gradient(
@@ -71,6 +72,15 @@ body {
     rgba(0, 0, 0, 0.45) 0%,
     rgba(0, 0, 0, 0.45) 100%
   );
+  width: 100%;
+  text-align: left;
+  line-height: 1.6rem;
+  padding: 0rem 0.25rem;
+  font-size: 1.5rem;
+}
+
+.article-title-text-nobg {
+  background: none;
   width: 100%;
   text-align: left;
   line-height: 1.6rem;
@@ -118,7 +128,7 @@ body {
 
 .article-grid {
   margin: 0 auto;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: ‘Open Sans’, Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -144,10 +154,17 @@ ul {
   padding-top: 25vh;
 }
 
-/* Controls Elements with width greater than 600px */
+.article-link:hover { transform: scale(1.1); }
+
+/* Controls Elements with width greater than 480px */
 @media only screen and (min-width: 480px) {
   .article-link {
     width: 50%;
+  }
+  .loader-container-appear {
+    display: none;
+    width: 3rem;
+    margin: 0 auto;
   }
 }
 
@@ -167,6 +184,11 @@ ul {
     justify-content: center;
     align-items: center;
   }
+  .loader-container-appear {
+    display: none;
+    width: 3rem;
+    margin: 0 auto;
+  }
 }
 
 /* Controls Elements with width greater than 1000px */
@@ -183,5 +205,10 @@ ul {
   }
   .article-link {
     width: 25%;
+  }
+  .loader-container-appear {
+    display: none;
+    width: 3rem;
+    margin: 0 auto;
   }
 }

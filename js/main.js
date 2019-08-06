@@ -13,15 +13,6 @@ $(function() {
     loadArticles(selected);
   });
 
-  // }).done(function(data){`
-  // console.log(data.results);
-
-  //     const results = data.results;
-  //     // $.each()
-  //     //append your article template
-  //     // $.each(results, function(index,value) {
-  //     // try template springs <article> <p>${abstract}</p></article>
-  //     // })
 
   function loadArticles(selected) {
     $.ajax({
@@ -41,14 +32,6 @@ $(function() {
 
         console.log(filteredArray);
 
-        // const imageArticle = .each(data.results.multimedia[4]).filter(=== "");
-        // const results = data.results.slice(0, 12)};
-
-        // const results =  filter(data.results.multimedia[4] = ).data.results.slice(0, 12)};
-
-        // if (data.results.multimedia[4] != "") {
-        //   const results = data.results.slice(0, 12);
-        // }
 
         $("#article-content").html("");
 
@@ -86,4 +69,13 @@ $(function() {
         console.log("This will always appear after a selection change.");
       });
   }
+
+  $('.article-link').on('click', function(){
+    $('.article-title-text').css.hide();
+ });
+
+
+
+
+
 }); //End of Document Ready
