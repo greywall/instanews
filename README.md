@@ -1,4 +1,4 @@
-# Instanews by Taljinder Grewallywally
+# Instanews
 
 ## Functionalities
 
@@ -12,13 +12,3 @@ I make use of a bunch of includes to the 'style.scss' because that's what we did
 
 ## Design
 
-I did not put effort into matching the layout or vision of the designers.
-
-## Stretch Goals
-
-Just look at this dog
-![Alt Text](https://media.giphy.com/media/vA13Ugiljn4aI/giphy.gif)
-
-## Additional Notes
-
-I referenced the $('#article-content) DOM element 5 times instead of creating a variable for it and referencing that.
